@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head"> 
+    <title>Proyecto Sprint Boot UACAM</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+	
+	<!-- Navegación -->
+	<header th:fragment="header">
+	<div class="container">
+      <div class="media-left">
+      </div>
+    </div>
+		
+	<div class="container">
+		<nav class="breadcrumb" aria-label="breadcrumbs">
+		  <ul>
+		    <li><a href="/">Inicio</a></li>
+		    <li><a href="/greeting">Facultad</a></li>
+		    <li><a href="#">Oferta Educativa</a></li>
+		    <li><a href="#">Laboratorio</a></li>
+		  </ul>
+		</nav>
+    </div>
+    </header>
+    <!-- Cuerpo del documento -->
+    <section class="section is-large">		
+	    <div class="container">
+	
+	    </div>
+    </section>
+    <footer class="footer" th:fragment="footer">
+	  <div class="content has-text-centered">
+	    <p>
+         <p>(c) UACAM 2023</p>		
+	    </p>
+	  </div>
+	</footer>
+</body>
+</html>

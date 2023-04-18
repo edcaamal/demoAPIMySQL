@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace ="~{layout :: head}"> 
+</head>
+<body>
+	
+	<!-- Navegación -->
+	<header th:replace ="~{layout :: header}"> </header>
+    <!-- Cuerpo del documento -->
+	    <div class="container">
+			<div class="card">
+			  <div class="card-content">
+			    <div class="content">
+				    <p th:text="'Hello, ' + ${name} + '!'" />
+				    <p th:text="'Página > ' + ${titulo}" />
+				    <p th:text="'APISW { ' + ${starWViewtDTO.name}  +' . '+ ${starWViewtDTO.height} +'}'" />
+				    
+					<div class="card">
+					  <div class="card-content">
+					    <p class="title">
+					      Bienvenido al micrositio Facultad de Ingeniería
+					    </p>
+					    <p class="subtitle">
+					      La Facultad de Ingeniería de la Universidad Autónoma de Campeche, les da la más cordial bienvenida a su sitio web, en donde encontrarán información relevante y actual de los servicios, eventos, noticias, programas educativos, y proyectos relacionados con al ámbito profesional que desempeña.
+					    </p>
+						<p>¡Sean Bienvenidos!</p>
+  				        <p class="title is-4">DIRECTOR</p>
+				        <p class="subtitle is-6">MAC. Francisco Javier Barrera Lao.</p>						
+					  </div>
+					  <footer class="card-footer">
+					    <br class="card-footer-item">
+						   <p>UACAM-FI</p>
+					  </footer>
+					</div>
+				    
+			    </div>
+			  </div>
+			</div>		
+	    </div>
+	<!-- Footer -->
+	<footer th:replace ="~{layout :: footer}"></footer> 
+
+</body>
+</html>
