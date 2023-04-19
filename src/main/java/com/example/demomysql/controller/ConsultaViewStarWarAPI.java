@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demomysql.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -7,22 +7,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.demo.models.StarWarResultDTO;
+import com.example.demomysql.models.StarWarResultDTO;
 
 @Controller
 public class ConsultaViewStarWarAPI {
 
 	@GetMapping("/view")
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="1") String name, Model model) {
-		String titulo = "Página SprinBot Incio";
+		String titulo = "P{agina API con SprinBot";
 		model.addAttribute("name", name);
 		model.addAttribute("titulo", titulo);
 		
 		StarWarResultDTO starWViewtDTO = starWarResultDTO (name);
 		model.addAttribute("starWViewtDTO", starWViewtDTO);
 		
-		return "inicio";
+		return "viewstarwar";
 	}
+	// http://localhost:8040/view
+	// http://localhost:8040/view?name=2
 	
 	public StarWarResultDTO starWarResultDTO (String sw) {
 		RestTemplate restTemplate = new RestTemplate();
@@ -35,5 +37,14 @@ public class ConsultaViewStarWarAPI {
 	}
 	
 
+	@GetMapping({"/", "/index", "home"})
+	public String home(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+		String titulo = "Inicio";
+		model.addAttribute("name", name);
+		model.addAttribute("titulo", titulo);
+		return "inicio";
+	}
+	
+	
 	
 }

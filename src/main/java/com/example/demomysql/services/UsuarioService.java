@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.example.demomysql.services;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.models.UsuarioModel;
-import com.example.demo.repositories.UsuarioRepository;
+import com.example.demomysql.models.UsuarioModel;
+import com.example.demomysql.repositories.UsuarioRepository;
 
 @Service
 public class UsuarioService {

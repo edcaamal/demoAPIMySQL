@@ -17,14 +17,22 @@
 					<div class="card">
 					  <div class="card-content">
 					    <p class="title">
-					      Bienvenido al micrositio Facultad de Ingeniería
+					      
 					    </p>
 					    <p class="subtitle">
-					      La Facultad de Ingeniería de la Universidad Autónoma de Campeche, les da la más cordial bienvenida a su sitio web, en donde encontrarán información relevante y actual de los servicios, eventos, noticias, programas educativos, y proyectos relacionados con al ámbito profesional que desempeña.
+					      Bienvenido a la consulta de API deste Java con Spring Boot Personajes de StarWar
 					    </p>
-						<p>¡Sean Bienvenidos!</p>
-  				        <p class="title is-4">DIRECTOR</p>
-				        <p class="subtitle is-6">MAC. Francisco Javier Barrera Lao.</p>						
+     				    <p th:text="'APISW { '" />
+     				    <p th:text="'         ' + ${starWViewtDTO.name}  " />
+     				    <p th:text="'         ' + ${starWViewtDTO.height} " />
+     				    <p th:text="'         ' + ${starWViewtDTO.mass} " />
+     				    <p th:text="'         ' + ${starWViewtDTO.hair_color} " />
+     				    <p th:text="'       }'" />
+     				    
+     				    <p></p>
+     				    <br>
+  				        <p class="title is-4">Temas Selectos de SW</p>
+				        <p class="subtitle is-6">Ingeniería en Sistemas Computacionales</p>						
 					  </div>
 					  <footer class="card-footer">
 					    <br class="card-footer-item">

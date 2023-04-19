@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.demomysql.models;
 
 public class CepResultDTO {
 	private String cep;

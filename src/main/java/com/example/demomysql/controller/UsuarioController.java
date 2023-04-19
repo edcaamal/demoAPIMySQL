@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demomysql.controller;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.models.UsuarioModel;
-import com.example.demo.services.UsuarioService;
+import com.example.demomysql.models.UsuarioModel;
+import com.example.demomysql.services.UsuarioService;
 
 @RestController
-@RequestMapping("/APÏ/usuario")
+@RequestMapping("/API/usuario")
 public class UsuarioController {
 	@Autowired
 	UsuarioService usuarioService;

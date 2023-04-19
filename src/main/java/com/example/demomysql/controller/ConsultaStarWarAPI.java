@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demomysql.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.demo.models.StarWarResultDTO;
+import com.example.demomysql.models.StarWarResultDTO;
 
 @RestController
 @RequestMapping("/API/consulta-starwar")
